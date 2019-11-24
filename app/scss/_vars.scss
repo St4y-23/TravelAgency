@@ -1,0 +1,28 @@
+$text: #808080;
+$blue: #00b1ff;
+$red: #ef5b5b;
+
+@mixin mf700{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+@mixin mf800{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+@mixin pf500{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+@mixin pf800{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+}
+@mixin of400{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+@mixin of700{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
