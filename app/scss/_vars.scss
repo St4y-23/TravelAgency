@@ -1,7 +1,12 @@
 $text: #808080;
 $blue: #00b1ff;
 $red: #ef5b5b;
+$grey: #d6d6d6;
 
+@mixin mf400{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
 @mixin mf700{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -25,4 +30,8 @@ $red: #ef5b5b;
 @mixin of700{
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
+}
+@mixin sf400{
+  font-family: 'Segoe Script';
+  font-weight: 400;
 }
