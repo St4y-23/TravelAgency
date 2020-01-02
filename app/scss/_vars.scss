@@ -2,6 +2,7 @@ $text: #808080;
 $blue: #00b1ff;
 $red: #ef5b5b;
 $grey: #d6d6d6;
+$yellow: #ffc811;
 
 @mixin mf400{
   font-family: 'Montserrat', sans-serif;
@@ -35,3 +36,8 @@ $grey: #d6d6d6;
   font-family: 'Segoe Script';
   font-weight: 400;
 }
+@mixin rf700{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+

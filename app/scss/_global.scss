@@ -101,11 +101,60 @@ body{
   @include sf400;
   font-size: 24px;
   line-height: 26px;
-  color: $red;
+	color: $red;
+	text-align: center;
 }
 .title{
 	@include mf800;
 	font-size: 28px;
   line-height: 26px;
-  color: #222;
+	color: #222;
+	text-align: center;
+}
+.price-suptitle{
+	@include mf700;
+	font-size: 14px;
+	color: $red;
+	text-decoration: line-through;
+}
+.price-title{
+	@include mf700;
+	font-size: 22px;
+	line-height: 26px;
+	color: $blue;
+}
+.star-list{
+	li{
+    display: inline-block;
+    color: $red;
+    font-size: 14px;
+  }
+}
+.arrow__prev,
+.arrow__next{
+	transition: .3s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: $red;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.arrow__prev{
+  img{
+    transform: translate(-55%, -50%);
+  }
+}
+.arrow__next{
+  img{
+    transform: translate(-40%, -50%);
+  }
 }
