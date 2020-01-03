@@ -1,0 +1,413 @@
+@media (max-width: 1600px){
+  .agency__wrapper{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .agency__inner{
+    display: block;
+    margin-left: 10px;
+    margin-top: -155px;
+  }
+  .agency__inner-info{
+    max-width: 100%;
+    margin-right: 0;
+  }
+  .agency__inner-items{
+    justify-content: center;
+  }
+  .agency__inner-items{
+    margin-left: -10px;
+  }
+  .agency-item{
+    margin-right: 10px;
+    margin-left: 10px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .agency{
+    .container-fluid{
+      max-width: 100%;
+    }
+  }
+}
+@media (max-width: 1500px){
+  .testimonials__video-tour{
+    padding-top: 600px;
+  }
+  .blog{
+    margin-top: -150px;
+  }
+  .blog__suptitle{
+    text-align: center;
+  }
+  .blog__title{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1360px){
+  .tour-slider__item{
+    margin-left: 20px;
+  }
+  .tour-slider__item-rectangle{
+    opacity: 1;
+  }
+}
+@media (max-width: 1300px){
+  .comforts__inner-slider{
+    max-width: 100%;
+  }
+  .comforts-slider__item{
+    max-height: 100%;
+  }
+}
+@media (max-width: 1250px){
+  .tour-slider__item{
+    margin-left: 50px;
+  }
+}
+@media (max-width: 1200px){
+  .tour__date-form__inner{
+    input{
+      width: 100%;
+      border-bottom: 1px solid $text;
+    }
+  }
+  .tour-people{
+    input{
+      border-bottom: none;
+    }
+  }
+  .tour-date__btn{
+    margin-top: 15px;
+    width: 100%;
+  }
+  .tour-people,
+  .tour-date-pick,
+  .tour-date-pick2{
+    &::after{
+      right: 25px;
+    }
+  }
+  .features__wrapper{
+    display: block;
+  }
+  .features__item{
+    max-width: 100%;
+    text-align: center;
+    padding: 25px 30px;
+  }
+}
+@media (max-width: 1190px){
+  .blog__inner{
+    display: block;
+  }
+  .blog__item{
+    max-width: 100%;
+  }
+  .blog__item-img{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .blog__item-inner{
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1180px){
+  .partners__subscribe-inner{
+    justify-content: center;
+  }
+  .partners__subscribe-wrapper{
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 1170px){
+  .tourist-place__wrapper{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .tourist-place__item{
+    max-width: 100%;
+    min-height: 203px;
+    margin-bottom: 30px;
+  }
+  .contacts__form{
+    display: block;
+    input{
+      width: 100%;
+    }
+    textarea{
+      width: 100%;
+    }
+  }
+  .contacts{
+    margin-bottom: 50px;
+  }
+  .partners__subscribe{
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1050px){
+  .ham{
+    display: block;
+  }
+  .header-menu{
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    width: 100%;
+    z-index: 10;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 1px $red;
+    li{
+      display: block;
+      text-align: center;
+      width: 100%;
+      
+      margin: 0;
+      border-bottom: 1px solid $red;
+      &:last-child{
+        border-bottom: none;
+      }
+      a{
+        width: 100%;
+        padding: 15px 0;
+      }
+    }
+    
+    .hotels::before,
+    .tour::before{
+      right: 20px;
+    }
+    .hotels,
+    .tour{
+      padding: 15px 0;
+    }
+  }
+  .header-btn{
+    display: none;
+  }
+  .footer{
+    padding-top: 50px;
+  }
+  .footer__inner{
+    display: block;
+  }
+  .footer__main{
+    max-width: 100%;
+  }
+  .footer__main-tel{
+    margin-right: 15px;
+  }
+  .footer__main-adres,
+  .footer__main-site{
+    display: inline-block;
+    margin-right: 15px;
+  }
+  .footer__menu-list__title,
+  .footer__link-title,
+  .footer__insta-title{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+  .footer__menu-list__title,
+  .footer__link-title{
+    margin-left: 15px;
+  }
+  .footer__menu-list,
+  .footer__link{
+    margin-left: -15px;
+    li{
+      display: inline-block;
+      margin-left: 15px;
+    };
+  }  
+  .footer__insta-wrapper{
+    text-align: left;
+  }  
+  .footer__insta-form{
+    button{
+      left: 170px;
+    }
+  }
+}
+@media (max-width: 950px){
+  .quantity__inner{
+    justify-content: center;
+  }
+  .quantity__item{
+    margin: 20px 20px;
+  }
+}
+@media (max-width: 900px){
+  .main__inner{
+    text-align: center;
+  }
+  .main-suptitle,
+  .main-title,
+  .main-subtitle{
+    text-align: center;
+  }
+}
+@media (max-width: 830px){
+  .app__inner{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .app__img{
+    text-align: center;
+    margin: 0 auto;
+  }
+  .app__item{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .blog__btn-wrapper{
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 800px){
+  .testimonials__slider-bottom__inner{
+    padding: 0 15px 15px 15px;
+  }
+}
+@media (max-width: 620px){
+  .tourist-place__item-map{
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .tourist-place__item{
+    text-align: center;
+  }
+  .blog__item{
+    display: block;
+    text-align: center;
+  }
+  .blog__item-inner{
+    justify-content: space-around;
+  }
+}
+@media (max-width: 600px){
+  .partners__subscribe-email{
+    input{
+      width: 100%;
+      height: 60px;
+      padding-right: 60px;
+    }
+    button{
+      width: 50px;
+      height: 60px;
+      &::before{
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 500px){
+  .container{
+    padding: 0 5px;
+  }
+  .tour-slider__item{
+    margin-left: 10px;
+  }
+  .contacts__form{
+    input{
+      padding-left: 15px;
+    }
+    textarea{
+      padding-left: 15px;
+      padding-top: 15px;
+    }
+  }
+}
+@media (max-width: 490px){
+  .app__wrapper{
+    a{
+      display: block;
+      margin: 0 0 20px;
+    }
+  }
+}
+@media (max-width: 470px){
+  .testimonials__video-tour__link{
+    display: block;
+    text-align: center;
+  }
+  .testimonials__btn{
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .testimonials__text{
+    font-size: 35px;
+    padding-left: 0;
+  }
+  .footer__copy{
+    font-size: 13px;
+  }
+}
+@media (max-width: 450px){
+  .testimonials__slider-top__inner{
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 410px){
+  .tour-slider__item{
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .tour-slider__item-wrapper{
+    padding: 7px;
+  }
+  .tour-slider__item-inner{
+    padding: 7px;
+  }
+}
+@media (max-width: 370px){
+  .tour-slider__item-info{
+    max-width: 200px;
+  }
+  .tour-slider__item-inner{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .tour-slider__item-review{
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1050px){
+  .ham{
+    display: none;
+  }
+  .header-menu{
+    display: block !important;
+  }
+  
+}

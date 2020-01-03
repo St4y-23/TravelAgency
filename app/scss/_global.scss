@@ -102,14 +102,12 @@ body{
   font-size: 24px;
   line-height: 26px;
 	color: $red;
-	text-align: center;
 }
 .title{
 	@include mf800;
 	font-size: 28px;
   line-height: 26px;
 	color: #222;
-	text-align: center;
 }
 .price-suptitle{
 	@include mf700;
@@ -157,4 +155,27 @@ body{
   img{
     transform: translate(-40%, -50%);
   }
+}
+.slick-dots{
+	padding-top: 30px;
+	text-align: center;
+	li{
+		display: inline-block;
+		font-size: 0;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: rgb(53, 50, 50);
+		border: 3px solid transparent;
+		margin: 0 3px;
+		cursor: pointer;
+	}
+	li.slick-active{
+		background-color: #fff;
+		border: 3px solid rgb(53, 50, 50);
+	}
+	button{
+		border: none;
+		display: none;
+	}
 }
