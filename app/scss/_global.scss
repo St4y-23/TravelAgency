@@ -29,6 +29,7 @@ body{
 	font-size: 16px;
 	line-height: 28px;
 	color: $text;
+	position: relative;
 }
 // FOOTER к низу
 .wrapper{
@@ -48,7 +49,133 @@ body{
 	margin: 0 auto;
 }
 .container{
-	max-width: 1170px;
+	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+.small-btn{
+	padding: 3px 20px;
+	background-color: $red;
+	color: #fff;
+	@include mf400;
+	font-size: 14px;
+	line-height: 26px;
+	border-radius: 4px;
+	transition: .3s;
+	&:hover{
+		background-color: #e93636;
+		box-shadow: 0 0 4px 2px #e93636;
+	}
+}
+.medium-btn{
+	padding: 8px 34px;
+	background-color: $red;
+	color: #fff;
+	text-transform: uppercase;
+	@include mf700;
+	font-size: 14px;
+	line-height: 26px;
+	border-radius: 8px;
+	transition: .3s;
+	&:hover{
+		background-color: #e93636;
+		box-shadow: 0 0 4px 2px #e93636;
+	}
+}
+.big-btn{
+	padding: 15px 25px;
+	background-color: $red;
+	color: #fff;
+	text-transform: uppercase;
+	@include mf700;
+	font-size: 14px;
+	line-height: 26px;
+	border-radius: 8px;
+	transition: .3s;
+	&:hover{
+		background-color: #e93636;
+		box-shadow: 0 0 4px 2px #e93636;
+	}
+}
+.suptitle{
+  @include sf400;
+  font-size: 24px;
+  line-height: 26px;
+	color: $red;
+}
+.title{
+	@include mf800;
+	font-size: 28px;
+  line-height: 26px;
+	color: #222;
+}
+.price-suptitle{
+	@include mf700;
+	font-size: 14px;
+	color: $red;
+	text-decoration: line-through;
+}
+.price-title{
+	@include mf700;
+	font-size: 22px;
+	line-height: 26px;
+	color: $blue;
+}
+.star-list{
+	li{
+    display: inline-block;
+    color: $red;
+    font-size: 14px;
+  }
+}
+.arrow__prev,
+.arrow__next{
+	transition: .3s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: $red;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.arrow__prev{
+  img{
+    transform: translate(-55%, -50%);
+  }
+}
+.arrow__next{
+  img{
+    transform: translate(-40%, -50%);
+  }
+}
+.slick-dots{
+	padding-top: 30px;
+	text-align: center;
+	li{
+		display: inline-block;
+		font-size: 0;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: rgb(53, 50, 50);
+		border: 3px solid transparent;
+		margin: 0 3px;
+		cursor: pointer;
+	}
+	li.slick-active{
+		background-color: #fff;
+		border: 3px solid rgb(53, 50, 50);
+	}
+	button{
+		border: none;
+		display: none;
+	}
 }
