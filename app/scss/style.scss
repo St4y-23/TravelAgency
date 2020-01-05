@@ -1,15 +1,15 @@
 @import "vars";
 @import "global";
 @import "fonts";
-header{
+.header{
   padding-top: 60px;
+  position: relative;
 }
 .header__inner{
   display: flex;
   justify-content: space-between;
   height: 40px;
   align-items: center;
-  position: relative;
 }
 .header-logo{
   @include of700;
@@ -1175,9 +1175,7 @@ header{
   margin-bottom: 20px;
 }
 .partners__subscribe-email{
-  form{
-    position: relative;
-  }
+  position: relative;
   input{
     width: 550px;
     height: 80px;
