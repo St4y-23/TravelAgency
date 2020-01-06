@@ -78,6 +78,7 @@ $(function () {
           arrows: false,
           dots: true,
           centerMode: false,
+          fade: true,
         }
       },
     ]
@@ -118,7 +119,7 @@ $(function () {
     centerMode: true,
     asNavFor: '.testimonials__slider-top',
   });
-  
+
   // $('#date-input').dateDropper();
   $('#date-input').dateDropper({
     format: 'd-m-Y',
@@ -134,51 +135,87 @@ $(function () {
     largeOnly: true
   });
 
-  $('.ham').on('click', function(){
+  $('.ham').on('click', function () {
     $('.header-menu').toggleClass("active");
   });
- 
+
   wow = new WOW(
     {
-    mobile:       false,       // default
-  }
+      mobile: false,       // default
+    }
   )
   wow.init();
 
-// Анимация чисел
-var a = 0;
-$(window).scroll(function() {
+  // Анимация чисел
+  var a = 0;
+  $(window).scroll(function () {
 
-  var oTop = $('.quantity__inner').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $('.number').each(function() {
-      var $this = $(this),
-        countTo = $this.attr('data-count');
-      $({
-        countNum: $this.text()
-      }).animate({
+    var oTop = $('.quantity__inner').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.number').each(function () {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
           countNum: countTo
         },
 
-        {
+          {
 
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.text(Math.floor(this.countNum));
-          },
-          complete: function() {
-            $this.text(this.countNum);
-          }
+            duration: 2000,
+            easing: 'swing',
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+            }
 
-        });
-    });
-    a = 1;
+          });
+      });
+      a = 1;
+    }
+
+  });
+
+
+  // Fixed menu
+  let header = $("#header");
+  let headerH = header.innerHeight();
+  let scrollPos = $(window).scrollTop();
+  checkScroll(scrollPos, headerH);
+
+  $(window).on("scroll resize", function (){
+    headerH = header.innerHeight();
+    scrollPos = $(this).scrollTop();
+    checkScroll(scrollPos, headerH);
+  });
+
+  function checkScroll(scrollPos, headerH) {
+    if (scrollPos > headerH) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
   }
 
+  // Scroll menu nav
+  $("[data-scroll]").on("click", function(event){
+    event.preventDefault();
+    let elementID = $(this).data("scroll");
+    let elementOffset = $(elementID).offset().top;
+
+    $('.header-menu').removeClass("active");
+    $('.ham').removeClass("active");
+
+
+    $("html, body").animate({
+      scrollTop: elementOffset - 100
+    }, 700);
+  });
+
+
+
 });
 
-
-});
-
-  

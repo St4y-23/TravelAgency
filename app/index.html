@@ -8,7 +8,18 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900|Open+Sans:400,700|Poppins:400,500,600,700,800,900|Raleway:600&display=swap"
 		rel="stylesheet">
-	<title>Document</title>
+	<meta name="description" content="Travell Agency">
+	<meta name="keywords" content="Туры, отели">
+	<meta name="google" content="notranslate" />
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<title>Mocco Group</title>
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,17 +27,17 @@
 <body>
 	<div class="wrapper">
 		<div class="content page-content">
-			<header class="header">
+			<header class="header" id="header">
 				<div class="container">
 					<div class="header__inner">
 						<a class="header-logo" href="#">Mocco Group <span>Travell Agency</span></a>
 						<ul class="header-menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">about</a></li>
-							<li><a class="tour" href="#">Tour</a></li>
-							<li><a class="hotels" href="#">Hotels</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="#" data-scroll="#home">Home</a></li>
+							<li><a href="#" data-scroll="#about">about</a></li>
+							<li><a class="tour" href="#" data-scroll="#tour">Tour</a></li>
+							<li><a class="hotels" href="#" data-scroll="#hotels">Hotels</a></li>
+							<li><a href="#" data-scroll="#blog">Blog</a></li>
+							<li><a href="#" data-scroll="#contacts">Contact</a></li>
 							<li><a class="icon-search" href="#"></a></li>
 						</ul>
 						<a class="header-btn medium-btn" href="#">Book Now</a>
@@ -43,7 +54,7 @@
 			</header>
 
 			<!-- MAIN -->
-			<main class="main">
+			<main class="main" id="home">
 				<div class="container-fluid">
 					<div class="main-bg" style="background-image: url(images/main-bg.jpg)">
 						<div class="container">
@@ -59,7 +70,7 @@
 			</main>
 
 			<!-- AGENCY -->
-			<section class="agency">
+			<section class="agency" id="about">
 				<div class="container-fluid">
 					<div class="agency__wrapper">
 						<div class="agency__inner">
@@ -216,7 +227,7 @@
 			</section>
 
 			<!-- TOUR -->
-			<section class="tour">
+			<section class="tour" id="tour">
 				<div class="container-fluid">
 					<div class="tour-bg" style="background-image: url(images/tour-bg.jpg);">
 						<div class="tour-bg__rectangle">
@@ -732,12 +743,13 @@
 			</section>
 
 			<!-- TESTIMONIALS -->
-			<section class="testimonials">
+			<section class="testimonials" id="hotels">
 				<div class="container-fluid">
 					<div class="testimonials__bg" style="background-image: url(images/testimonials-bg.jpg)">
 						<div class="container">
 							<div class="testimonials__video-tour">
-								<a class="testimonials__video-tour__link wow bounceIn" href="https://www.youtube.com/watch?v=XgxexxS9LN8">
+								<a class="testimonials__video-tour__link wow bounceIn"
+									href="https://www.youtube.com/watch?v=XgxexxS9LN8">
 									<div class="testimonials__btn"></div>
 									<div class="testimonials__text">Video Tour</div>
 								</a>
@@ -948,7 +960,7 @@
 			</section>
 
 			<!-- BLOG -->
-			<section class="blog">
+			<section class="blog" id="blog">
 				<div class="container">
 					<div class="blog__suptitle suptitle">Our Agency </div>
 					<div class="blog__title title">Latest Blog</div>
@@ -1077,7 +1089,7 @@
 			</section>
 
 			<!-- CONTACTS -->
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="container">
 					<div class="contacts__suptitle suptitle">We are ready to help you</div>
 					<div class="contacts__title title">Your Message</div>
