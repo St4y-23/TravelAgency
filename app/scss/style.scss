@@ -3,7 +3,20 @@
 @import "fonts";
 .header{
   padding-top: 60px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  &.fixed{
+    position: fixed;
+    background-color: #a3cce4;
+    padding: 15px 0;
+    height: auto;
+    .header-menu{
+      margin-top: 0;
+    }
+  }
 }
 .header__inner{
   display: flex;
@@ -42,6 +55,7 @@
 .header-menu{
   margin-right: 0;
   margin-left: auto;
+  margin-top: 15px;
   .tour{
     padding-right: 15px;
     position: relative;
@@ -389,6 +403,8 @@
 }
 .tour-slider{
   margin-bottom: 145px;
+  height: 612px;
+  overflow: hidden;
 }
 .tour-slider__item{
   background-color: #fff;
